@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Netbook</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <div class="nav-left">
+            <div>
+                <img class="logo" src="./assets/logo-black.svg" alt="logo">
+            </div>
+            <div>
+                <ul class="menu">
+                    <li>Home</li>
+                    <li class="dropdown">
+                        <span>Community</span>
+                        <span class="arrow">
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </span>
+                    </li>
+                    <li>Blog</li>
+                    <li>Events</li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="search-container">
+                <span>
+                    <ion-icon name="search-outline"></ion-icon>
+                </span>
+                <input class="search" type="search" placeholder="Search Here...">
+            </div>
+            <button class="button button-full">Log in</button>
+        </div>
+    </nav>
+
+    <section class="section-home">
+        <div class="home grid grid--2-cols">
+            <div class="home-left">
+                <span class="tag"><strong>Netbook community</strong></span>
+                <h1 class="home-title">Your Solutions For Community!</h1>
+                <p class="home-text">More than 2 billion people in over countries use socibook to stay in touch with
+                    friends & family.</p>
+                <div class="home-btns-container">
+                    <button class="button button-full">About More</button>
+                    <button class="button button-outline">Invite Friend</button>
+                </div>
+            </div>
+            <div class="home-right">
+                <img class="home-img" src="./assets/section-1.svg" alt="Illustration of people talking">
+            </div>
+        </div>
+    </section>
+
+    <section class="section-about">
+        <div class="about grid grid--2-cols">
+            <div class="about-left">
+                <strong class="secondary-title">Whats Netbooks?</strong>
+                <h1 class="about-title">Why Join to Netbook Social Network?</h1>
+                <p class="about-text">Recent surveys have indicated that small businesses recognise the need they have
+                    to connect with consumer.</p>
+                <ul class="about-list">
+                    <li><span>Groups</span></li>
+                    <li><span>Messages</span></li>
+                    <li><span>Share</span></li>
+                </ul>
+            </div>
+            <div class="about-right">
+                <div class="grid grid--2-cols">
+                    <div class="about--img-container about--img-container-left">
+                        <img class="about-img about--img-left" src="./assets/group@2x.png" alt="Meeting in work">
+                    </div>
+                    <div class="about--img-container about--img-container-right">
+                        <img class="about-img about--img-right" src="./assets/laptop@2x.png"
+                            alt="Person typing on laptop">
+                        <img class="about-img about--img-right" src="./assets/cables@2x.png"
+                            alt="Cables, that are plugged in hardware">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
