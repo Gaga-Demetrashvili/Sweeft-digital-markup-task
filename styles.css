@@ -31,17 +31,22 @@
  * - Primary:
  *  #D4E7FE
  *  #FFFFFF
+ *  #E5F0FD
  * 
  * - Tints:
  * 
  * - Shades
  * #217BF4
  * #0A093D
+ * #2f2c4a
  * 
  * - Feature Icons
  * #287FF5
  * #F1464D
  * #FFB133
+ *
+ * - Border Colors
+ * #FFAF2E
  *
  *
  *
@@ -51,6 +56,7 @@
  * #777
  * #555
  * #4a4a56
+ * #656464
  * #e6e6e6
  * 
  * --- 06 BORDER-RADIUS
@@ -158,28 +164,28 @@ html {
 }
 
 /****************************/
-/* HOME PAGE */
+/* HERO SECTION */
 /****************************/
 
-.section-home {
+.section-hero {
   padding: 4.8rem 0 9.6rem 0;
   background: transparent linear-gradient(325deg, #d4e7fe 0%, #ffffff 100%) 0%
     0% no-repeat padding-box;
   opacity: 1;
 }
 
-.home {
+.hero {
   max-width: 130rem;
   margin: 0 auto;
   padding: 0 3.2rem;
 }
 
-.home-left,
-.home-right {
+.hero-left,
+.hero-right {
   align-self: center;
 }
 
-.home-img {
+.hero-img {
   width: 50rem;
   float: right;
 }
@@ -194,26 +200,26 @@ html {
   font-size: 1.2rem;
 }
 
-.home-title {
+.hero-title {
   font-size: 6.4rem;
   margin-bottom: 1.2rem;
   letter-spacing: -1px;
   color: #0a093d;
 }
 
-.home-text {
+.hero-text {
   font-size: 2rem;
   margin-bottom: 3.2rem;
   color: #555;
 }
 
-.home-btns-container {
+.hero-btns-container {
   display: flex;
   gap: 2rem;
 }
 
 /****************************/
-/* ABOUT PAGE */
+/* ABOUT SECTION */
 /****************************/
 
 .section-about {
@@ -519,3 +525,181 @@ html {
 /****************************/
 /* TEAM SECTION */
 /****************************/
+
+.section-team {
+  margin: 9.6rem 0;
+}
+
+.team {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 4.8rem;
+}
+
+.team-info {
+  text-align: center;
+}
+
+.team-secondary-title {
+  font-size: 1.8rem;
+  color: #217bf4;
+  margin-bottom: 1.2rem;
+}
+
+.team-title {
+  font-size: 3.2rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: -1px;
+  color: #0a093d;
+}
+
+.team-text {
+  font-size: 1.4rem;
+  margin-bottom: 3.2rem;
+  color: #555;
+}
+
+.team-bar {
+  margin: 2rem auto;
+  display: flex;
+  padding: 1.2rem 0.8rem;
+  background-color: rgb(33, 123, 244, 0.1);
+  max-width: 50rem;
+  border-radius: 10px;
+  justify-content: space-around;
+}
+
+.team-bar div {
+  padding: 1.2rem 4.8rem;
+}
+
+.team-bar div p {
+  color: #2f2c4a;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.bar-selected {
+  background-color: #217bf4;
+  border-radius: 10px;
+}
+
+.bar-selected p {
+  color: #ffffff !important;
+}
+
+.employees {
+  max-width: 130rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 4.8rem 0;
+  gap: 6rem;
+}
+
+.empolyee {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.employee-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 0;
+  border: 4px #ffaf2e;
+  border-radius: 1000rem;
+  border-style: dashed;
+}
+
+.employee-img {
+  width: 15rem;
+  padding: 1.2rem;
+}
+
+.check {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(30%);
+}
+
+.employee-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.employee-name {
+  color: #2f2c4a;
+  font-size: 2rem;
+}
+
+.employee-email {
+  color: #656464;
+  font-size: 1.2rem;
+}
+
+/****************************/
+/* APPLICATION SECTION */
+/****************************/
+
+.section-application {
+  margin: 9.6rem 0;
+  background-color: #e5f0fd;
+}
+
+.application {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.application-left {
+  margin-top: 10rem;
+  margin-left: 6rem;
+  width: 30rem;
+}
+
+.app-section-secondary-title {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: #217bf4;
+  margin-bottom: 0.5rem;
+}
+
+.app-section-title {
+  font-size: 3.2rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: -1px;
+  color: #0a093d;
+}
+
+.app-section-text {
+  font-size: 1.4rem;
+  margin-bottom: 3.2rem;
+  color: #555;
+}
+
+.app-btns-container {
+  margin-top: -5rem;
+}
+
+.ios-btn {
+  width: 20rem;
+  margin-left: -5rem;
+}
+
+.android-btn {
+  width: 10rem;
+  margin-left: -3rem;
+  margin-bottom: 4.8rem;
+}
+
+.application-img {
+  width: 60rem;
+  position: relative;
+  left: 12rem;
+}
