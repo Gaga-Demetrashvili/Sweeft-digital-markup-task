@@ -10,83 +10,248 @@
 </head>
 
 <body>
-    <!--Navbar-->
-    <nav class="navbar">
-        <div class="nav-left">
-            <div>
-                <img class="logo" src="./assets/logo-black.svg" alt="logo">
-            </div>
-            <div>
-                <ul class="menu">
-                    <li>Home</li>
-                    <li class="dropdown">
-                        <span>Community</span>
-                        <span class="arrow">
-                            <ion-icon name="chevron-down-outline"></ion-icon>
-                        </span>
-                    </li>
-                    <li>Blog</li>
-                    <li>Events</li>
-                </ul>
-            </div>
-        </div>
-        <div class="nav-right">
-            <div class="search-container">
-                <span>
-                    <ion-icon name="search-outline"></ion-icon>
-                </span>
-                <input class="search" type="search" placeholder="Search Here...">
-            </div>
-            <button class="button button-full">Log in</button>
-        </div>
-    </nav>
-
-    <section class="section-home">
-        <div class="home grid grid--2-cols">
-            <div class="home-left">
-                <span class="tag"><strong>Netbook community</strong></span>
-                <h1 class="home-title">Your Solutions For Community!</h1>
-                <p class="home-text">More than 2 billion people in over countries use socibook to stay in touch with
-                    friends & family.</p>
-                <div class="home-btns-container">
-                    <button class="button button-full">About More</button>
-                    <button class="button button-outline">Invite Friend</button>
+    <header>
+        <!--Navbar-->
+        <nav class="navbar">
+            <div class="nav-left">
+                <div>
+                    <img class="logo" src="./assets/logo-black.svg" alt="logo">
+                </div>
+                <div>
+                    <ul class="menu">
+                        <li>Home</li>
+                        <li class="dropdown">
+                            <span>Community</span>
+                            <span class="arrow">
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </span>
+                        </li>
+                        <li>Blog</li>
+                        <li>Events</li>
+                    </ul>
                 </div>
             </div>
-            <div class="home-right">
-                <img class="home-img" src="./assets/section-1.svg" alt="Illustration of people talking">
+            <div class="nav-right">
+                <div class="search-container">
+                    <span>
+                        <ion-icon name="search-outline"></ion-icon>
+                    </span>
+                    <input class="search" type="search" placeholder="Search Here...">
+                </div>
+                <button class="button button-full">Log in</button>
             </div>
-        </div>
-    </section>
+        </nav>
+    </header>
 
-    <section class="section-about">
-        <div class="about grid grid--2-cols">
-            <div class="about-left">
-                <strong class="secondary-title">Whats Netbooks?</strong>
-                <h1 class="about-title">Why Join to Netbook Social Network?</h1>
-                <p class="about-text">Recent surveys have indicated that small businesses recognise the need they have
-                    to connect with consumer.</p>
-                <ul class="about-list">
-                    <li><span>Groups</span></li>
-                    <li><span>Messages</span></li>
-                    <li><span>Share</span></li>
-                </ul>
-            </div>
-            <div class="about-right">
-                <div class="grid grid--2-cols">
-                    <div class="about--img-container about--img-container-left">
-                        <img class="about-img about--img-left" src="./assets/group@2x.png" alt="Meeting in work">
+    <main>
+        <section class="section-home">
+            <div class="home grid grid--2-cols">
+                <div class="home-left">
+                    <span class="tag"><strong>Netbook community</strong></span>
+                    <h1 class="home-title">Your Solutions For Community!</h1>
+                    <p class="home-text">More than 2 billion people in over countries use socibook to stay in touch with
+                        friends & family.</p>
+                    <div class="home-btns-container">
+                        <button class="button button-full">About More</button>
+                        <button class="button button-outline">Invite Friend</button>
                     </div>
-                    <div class="about--img-container about--img-container-right">
-                        <img class="about-img about--img-right" src="./assets/laptop@2x.png"
-                            alt="Person typing on laptop">
-                        <img class="about-img about--img-right" src="./assets/cables@2x.png"
-                            alt="Cables, that are plugged in hardware">
+                </div>
+                <div class="home-right">
+                    <img class="home-img" src="./assets/section-1.svg" alt="Illustration of people talking">
+                </div>
+            </div>
+        </section>
+
+        <section class="section-about">
+            <div class="about grid grid--2-cols">
+                <div class="about-left">
+                    <strong class="secondary-title">Whats Netbooks?</strong>
+                    <h1 class="about-title">Why Join to Netbook Social Network?</h1>
+                    <p class="about-text">Recent surveys have indicated that small businesses recognise the need they
+                        have
+                        to connect with consumer.</p>
+                    <ul class="about-list">
+                        <li><span>Groups</span></li>
+                        <li><span>Messages</span></li>
+                        <li><span>Share</span></li>
+                    </ul>
+                </div>
+                <div class="about-right">
+                    <div class="grid grid--2-cols">
+                        <div class="about--img-container about--img-container-left">
+                            <img class="about-img about--img-left" src="./assets/group@2x.png" alt="Meeting in work">
+                        </div>
+                        <div class="about--img-container about--img-container-right">
+                            <img class="about-img about--img-right" src="./assets/laptop@2x.png"
+                                alt="Person typing on laptop">
+                            <img class="about-img about--img-right" src="./assets/cables@2x.png"
+                                alt="Cables, that are plugged in hardware">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section class="section-achievements">
+            <div class="achievements grid grid--3-cols">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="./assets/achievements/Star.svg" alt="Star icon">
+                        <span class="card-title">4.8 Rating</span>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-imgs">
+                            <img class="card-img" src="./assets/achievements/person-1@2x.png" alt="Person 1">
+                            <img class="card-img" src="./assets/achievements/person-2@2x.png" alt="Person 2">
+                            <img class="card-img" src="./assets/achievements/person-3@2x.png" alt="Person 3">
+                        </div>
+                        <div>
+                            <p class="info-text"><span>+836k</span> Members</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="card-text">More than 2 billion we people over countries use socibooks we to stay in
+                            touch with
+                            friends.</p>
+                    </div>
+                    <div>
+                        <a class="card-link" href="#">Join our community</a>
+                        <img src="./assets/achievements/ArrowRight-blue.svg" alt="Blue right arrow">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <img src="./assets/achievements/Trophy.svg" alt="Trophy icon">
+                        <span class="card-title">Awwards</span>
+                    </div>
+                    <div class="card-info card-second-info">
+                        <div>
+                            <img class="card-img--second" src="./assets/achievements/git-icon@2x.png" alt="Git icon">
+                        </div>
+                        <div>
+                            <p class="info-text">Best of <span>2021</span> on Github</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="card-text">More than 2 billion we people over countries use socibooks we to stay in
+                            touch with
+                            friends.</p>
+                    </div>
+                    <div>
+                        <a class="card-link card-link-second" href="#">Go To Awards</a>
+                        <img src="./assets/achievements/ArrowRight-black.svg" alt="Black right arrow">
+                    </div>
+                </div>
+                <div class="achievement-info">
+                    <strong class="achievement-secondary-title">Our Achievement</strong>
+                    <h1 class="achievement-title">We are Connecting You The Digital Life.</h1>
+                    <p class="achievement-text">The scope the Social Media becomes crucial Is helps the business to
+                        directly
+                        engage with their needs and wants.</p>
+                    <div class="home-btns-container">
+                        <button class="button button-full achievement-btn">
+                            <span>Discover me</span>
+                            <span>
+                                <img class="arrow-white" src="./assets/achievements/ArrowRight-white.svg"
+                                    alt="White right arrow">
+                            </span>
+                        </button>
+                    </div>
+                </div>
+        </section>
+
+        <section class="section-community">
+            <div class="community">
+                <div class="community-info">
+                    <strong class="community-secondary-title">Our Community</strong>
+                    <h1 class="community-title">Community Main Feature</h1>
+                    <p class="community-text">The wise man therefore always holds in these matters </br> this
+                        principle
+                        of
+                        selection.</p>
+                </div>
+                <div class="features grid grid--2-cols">
+                    <div class="feature-card feature-left">
+                        <div class="feature-icon icon-1">
+                            <img src="./assets/features/two-people.svg" alt="">
+                        </div>
+                        <div class="feature-info">
+                            <h1 class="feature-title">Members, Friends</h1>
+                            <p class="feature-text">Members, Friends Connection ( like followers ), Private Message</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon icon-2">
+                            <img src="./assets/features/three-people.svg" alt="">
+                        </div>
+                        <div>
+                            <div class="feature-info">
+                                <h1 class="feature-title">Groups</h1>
+                                <p class="feature-text">Your users can create groups to let other users to join and talk
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-card feature-left">
+                        <div class="feature-icon icon-3">
+                            <img src="./assets/features/chat.svg" alt="">
+                        </div>
+                        <div>
+                            <div class="feature-info">
+                                <h1 class="feature-title">Forum</h1>
+                                <p class="feature-text">Forum is ready by BBPress. Your users can make topics and talk.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon icon-1">
+                            <img src="./assets/features/diamond.svg" alt="">
+                        </div>
+                        <div>
+                            <div class="feature-info">
+                                <h1 class="feature-title">Custom Module</h1>
+                                <p class="feature-text">You can create Members, Groups Module. We already created 3
+                                    modules. It's by drag & drop live builder.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-card feature-left">
+                        <div class="feature-icon icon-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+                            </svg>
+
+                        </div>
+                        <div>
+                            <div class="feature-info">
+                                <h1 class="feature-title">List Builder</h1>
+                                <p class="feature-text">Members, Groups list can be modified by drag & drop live
+                                    builder.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon icon-3">
+                            <img src="./assets/features/scroll.svg" alt="">
+                        </div>
+                        <div>
+                            <div class="feature-info">
+                                <h1 class="feature-title">List Scroll Effects</h1>
+                                <p class="feature-text">8 different scroll effects are ready. You can always change by
+                                    your tastes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

@@ -2,6 +2,22 @@
  * /*
  * 
  * --- 01 TYPOGRAPHY SYSTEM
+ *
+ * - Font weights:
+ * Default: 400
+ * Medium: 500
+ * Semi-bold: 600
+ * Bold: 700
+ *
+ * - Line heights: 
+ * Default: 1
+ * Small: 1.05
+ * Medium: 1.2
+ * Paragraph default: 1.6
+ * 
+ * - Letter spacing:
+ * -1px
+ * 
  * 
  * - FONT SIZE SYSTEM (px)
  *     10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
@@ -22,11 +38,20 @@
  * #217BF4
  * #0A093D
  * 
+ * - Feature Icons
+ * #287FF5
+ * #F1464D
+ * #FFB133
+ *
+ *
+ *
  * - Greys
  * 
  * #999
  * #777
  * #555
+ * #4a4a56
+ * #e6e6e6
  * 
  * --- 06 BORDER-RADIUS
  * 
@@ -69,6 +94,10 @@ html {
 
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: 1fr 1fr 1.5fr;
 }
 
 /****************************/
@@ -227,6 +256,14 @@ html {
   color: #217bf4;
 }
 
+.about-list li {
+  margin-bottom: 1.4rem;
+}
+
+.about-list li:last-child {
+  margin-bottom: 0;
+}
+
 .about-list span {
   color: #000;
 }
@@ -252,3 +289,233 @@ html {
   flex-direction: column;
   gap: 2rem;
 }
+
+/****************************/
+/* ACHIEVEMENTS SECTION */
+/****************************/
+
+.section-achievements {
+  padding: 6.4rem 0;
+}
+
+.achievements {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  gap: 3rem;
+}
+
+.card {
+  padding: 2rem;
+  box-shadow: 1.2rem 1.2rem 3.2rem rgba(0, 0, 0, 0.075);
+  border-radius: 10px;
+  border: solid 1px #e6e6e6;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+}
+
+.card-title {
+  margin-left: 0.8rem;
+  margin-top: 0.8rem;
+  font-size: 1.8rem;
+  color: #0a093d;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.card-imgs {
+  position: relative;
+  right: 5rem;
+  margin-right: 0;
+  display: flex;
+}
+
+.card-img {
+  margin-right: -10rem;
+  width: 12rem;
+  height: 12rem;
+}
+
+.card-img--second {
+  width: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+}
+
+.card-second-info {
+  margin: 4.3rem 0;
+}
+
+.info-text {
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  color: #555;
+}
+
+.info-text span {
+  color: #217bf4;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 1.4rem;
+  margin-bottom: 3.2rem;
+  color: #555;
+}
+
+.card-link {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #217bf4;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.card-link-second {
+  color: #4a4a56;
+}
+
+.achievement-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 6rem;
+}
+
+.achievement-secondary-title {
+  font-size: 1.8rem;
+  color: #217bf4;
+  margin-bottom: 1.2rem;
+}
+
+.achievement-title {
+  font-size: 3.2rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: -1px;
+  color: #0a093d;
+}
+
+.achievement-text {
+  font-size: 1.4rem;
+  margin-bottom: 3.2rem;
+  color: #555;
+}
+
+.achievement-btn {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.arrow-white {
+  margin-top: 0.3rem;
+}
+
+/****************************/
+/* COMMUNITY SECTION */
+/****************************/
+
+.section-community {
+  margin: 9.6rem 0 9.6rem 0;
+  padding-bottom: 4.8rem;
+  background: transparent
+    linear-gradient(0deg, #f1f6fd00 0%, #f1f6fd 5%, #f1f6fd 64%, #ffffff 100%)
+    0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.community {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 4.8rem;
+}
+
+.community-info {
+  text-align: center;
+}
+
+.community-secondary-title {
+  font-size: 1.8rem;
+  color: #217bf4;
+  margin-bottom: 1.2rem;
+}
+
+.community-title {
+  font-size: 3.2rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: -1px;
+  color: #0a093d;
+}
+
+.community-text {
+  font-size: 1.4rem;
+  margin-bottom: 3.2rem;
+  color: #555;
+}
+
+.features {
+  gap: 2rem;
+}
+
+.feature-card {
+  display: flex;
+  background-color: #ffffff;
+  max-width: 50rem;
+  padding: 4rem;
+  column-gap: 2rem;
+  border-radius: 10px;
+  height: 17rem;
+}
+
+.feature-icon {
+  display: flex;
+  width: 6rem;
+  height: 6rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-1 {
+  background-color: #287ff5;
+}
+.icon-2 {
+  background-color: #f1464d;
+}
+.icon-3 {
+  background-color: #ffb133;
+}
+
+.feature-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: #2f2c4a;
+  font-weight: 600;
+}
+
+.feature-text {
+  font-size: 1.6rem;
+  color: #656464;
+}
+
+.feature-left {
+  margin-left: auto;
+}
+
+/****************************/
+/* TEAM SECTION */
+/****************************/
