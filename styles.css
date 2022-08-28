@@ -40,12 +40,15 @@
 /****************************/
 
 .navbar {
+  box-shadow: 0 2px 2px -2px #777;
+}
+
+.navbar-container {
   display: flex;
   justify-content: space-between;
   max-width: 130rem;
   margin: 0 auto;
   padding: 0.8rem 3.2rem;
-  box-shadow: 0 2px 2px -2px #777;
 }
 
 .logo {
@@ -112,9 +115,6 @@
 
 .section-hero {
   padding: 9.6rem 0;
-  background: transparent linear-gradient(325deg, #d4e7fe 0%, #ffffff 100%) 0%
-    0% no-repeat padding-box;
-  opacity: 1;
 }
 
 .hero-left,
@@ -172,7 +172,7 @@
 
 .about-list {
   margin-top: 6.4rem;
-  margin-left: 1.6rem;
+  margin-left: 2rem;
   font-size: 2rem;
   color: #217bf4;
 }

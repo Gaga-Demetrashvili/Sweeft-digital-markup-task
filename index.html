@@ -18,40 +18,39 @@
     <header>
         <!--Navbar-->
         <nav class="navbar">
-            <div class="nav-left">
-                <div>
-                    <img class="logo" src="./assets/logo-black.svg" alt="logo">
+            <div class="navbar-container">
+                <div class="nav-left">
+                    <div>
+                        <img class="logo" src="./assets/logo-black.svg" alt="logo">
+                    </div>
+                    <div>
+                        <ul class="menu">
+                            <li><a class="menu-item" href="#hero">Home</a></li>
+                            <li>
+                                <a class="menu-item dropdown" href="#community">
+                                    <span>Community</span>
+                                    <span class="arrow">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </li>
+                            <li><a class="menu-item" href="#">Blog</a></li>
+                            <li><a class="menu-item" href="#">Events</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <ul class="menu">
-                        <li><a class="menu-item" href="#home">Home</a></li>
-                        <li>
-                            <a class="menu-item dropdown" href="#community">
-                                <span>Community</span>
-                                <span class="arrow">
-                                    <ion-icon name="chevron-down-outline"></ion-icon>
-                                </span>
-                            </a>
-                        </li>
-                        <li><a class="menu-item" href="#">Blog</a></li>
-                        <li><a class="menu-item" href="#">Events</a></li>
-                    </ul>
+                <div class="nav-right">
+                    <div class="search-container">
+                        <span>
+                            <ion-icon name="search-outline"></ion-icon>
+                        </span>
+                        <input class="search" type="search" placeholder="Search Here...">
+                    </div>
+                    <button class="button button-full">Log in</button>
                 </div>
-            </div>
-            <div class="nav-right">
-                <div class="search-container">
-                    <span>
-                        <ion-icon name="search-outline"></ion-icon>
-                    </span>
-                    <input class="search" type="search" placeholder="Search Here...">
-                </div>
-                <button class="button button-full">Log in</button>
             </div>
         </nav>
-    </header>
-
-    <main>
-        <section class="section-hero" id="home">
+        <section class="section-hero" id="hero">
             <div class="section-content-wrapper grid grid--2-cols">
                 <div class="hero-left">
                     <span class="tag"><strong>Netbook community</strong></span>
@@ -68,7 +67,9 @@
                 </div>
             </div>
         </section>
+    </header>
 
+    <main>
         <section class="section">
             <div class="section-content-wrapper grid grid--2-cols">
                 <div class="about-left">
@@ -417,7 +418,7 @@
                         <div class="links">
                             <p class="main-link">Home</p>
                             <ul class="links-list">
-                                <li><a href="#home">Home</a></li>
+                                <li><a href="#hero">Home</a></li>
                                 <li><a href="#community">Community</a></li>
                                 <li><a href="#">Events</a></li>
                                 <li><a href="#">Contact</a></li>
