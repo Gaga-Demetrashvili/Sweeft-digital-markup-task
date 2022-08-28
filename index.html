@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Netbook</title>
 </head>
 
@@ -19,15 +24,17 @@
                 </div>
                 <div>
                     <ul class="menu">
-                        <li>Home</li>
-                        <li class="dropdown">
-                            <span>Community</span>
-                            <span class="arrow">
-                                <ion-icon name="chevron-down-outline"></ion-icon>
-                            </span>
+                        <li><a class="menu-item" href="#home">Home</a></li>
+                        <li>
+                            <a class="menu-item dropdown" href="#community">
+                                <span>Community</span>
+                                <span class="arrow">
+                                    <ion-icon name="chevron-down-outline"></ion-icon>
+                                </span>
+                            </a>
                         </li>
-                        <li>Blog</li>
-                        <li>Events</li>
+                        <li><a class="menu-item" href="#">Blog</a></li>
+                        <li><a class="menu-item" href="#">Events</a></li>
                     </ul>
                 </div>
             </div>
@@ -44,8 +51,8 @@
     </header>
 
     <main>
-        <section class="section-hero">
-            <div class="hero grid grid--2-cols">
+        <section class="section-hero" id="home">
+            <div class="section-content-wrapper grid grid--2-cols">
                 <div class="hero-left">
                     <span class="tag"><strong>Netbook community</strong></span>
                     <h1 class="hero-title">Your Solutions For Community!</h1>
@@ -62,12 +69,12 @@
             </div>
         </section>
 
-        <section class="section-about">
-            <div class="about grid grid--2-cols">
+        <section class="section">
+            <div class="section-content-wrapper grid grid--2-cols">
                 <div class="about-left">
-                    <strong class="secondary-title">Whats Netbooks?</strong>
-                    <h1 class="about-title">Why Join to Netbook Social Network?</h1>
-                    <p class="about-text">Recent surveys have indicated that small businesses recognise the need they
+                    <h4 class="section-secondary-title">Whats Netbooks?</h4>
+                    <h2 class="section-title">Why Join to Netbook Social Network?</h2>
+                    <p class="section-text">Recent surveys have indicated that small businesses recognise the need they
                         have
                         to connect with consumer.</p>
                     <ul class="about-list">
@@ -114,10 +121,10 @@
                             touch with
                             friends.</p>
                     </div>
-                    <div>
-                        <a class="card-link" href="#">Join our community</a>
+                    <a href="#" class="card-link">
+                        <span>Join Our Community</span>
                         <img src="./assets/achievements/ArrowRight-blue.svg" alt="Blue right arrow">
-                    </div>
+                    </a>
                 </div>
                 <div class="card">
                     <div class="card-header">
@@ -137,15 +144,15 @@
                             touch with
                             friends.</p>
                     </div>
-                    <div>
-                        <a class="card-link card-link-second" href="#">Go To Awards</a>
+                    <a href="#" class="card-link card-link-second">
+                        <span>Go To Awards</span>
                         <img src="./assets/achievements/ArrowRight-black.svg" alt="Black right arrow">
-                    </div>
+                    </a>
                 </div>
                 <div class="achievement-info">
-                    <strong class="achievement-secondary-title">Our Achievement</strong>
-                    <h1 class="achievement-title">We are Connecting You The Digital Life.</h1>
-                    <p class="achievement-text">The scope the Social Media becomes crucial Is helps the business to
+                    <h3 class="section-secondary-title">Our Achievement</h3>
+                    <h2 class="section-title">We are Connecting You The Digital Life.</h2>
+                    <p class="section-text">The scope the Social Media becomes crucial Is helps the business to
                         directly
                         engage with their needs and wants.</p>
                     <div class="hero-btns-container">
@@ -160,12 +167,12 @@
                 </div>
         </section>
 
-        <section class="section-community">
+        <section class="section section-community" id="community">
             <div class="community">
                 <div class="community-info">
-                    <strong class="community-secondary-title">Our Community</strong>
-                    <h1 class="community-title">Community Main Feature</h1>
-                    <p class="community-text">The wise man therefore always holds in these matters </br> this
+                    <h3 class="section-secondary-title">Our Community</h3>
+                    <h2 class="section-title">Community Main Feature</h2>
+                    <p class="section-text">The wise man therefore always holds in these matters </br> this
                         principle
                         of
                         selection.</p>
@@ -176,7 +183,7 @@
                             <img src="./assets/features/two-people.svg" alt="">
                         </div>
                         <div class="feature-info">
-                            <h1 class="feature-title">Members, Friends</h1>
+                            <h2 class="feature-title">Members, Friends</h2>
                             <p class="feature-text">Members, Friends Connection ( like followers ), Private Message</p>
                         </div>
                     </div>
@@ -186,7 +193,7 @@
                         </div>
                         <div>
                             <div class="feature-info">
-                                <h1 class="feature-title">Groups</h1>
+                                <h2 class="feature-title">Groups</h2>
                                 <p class="feature-text">Your users can create groups to let other users to join and talk
                                 </p>
                             </div>
@@ -198,7 +205,7 @@
                         </div>
                         <div>
                             <div class="feature-info">
-                                <h1 class="feature-title">Forum</h1>
+                                <h2 class="feature-title">Forum</h2>
                                 <p class="feature-text">Forum is ready by BBPress. Your users can make topics and talk.
                                 </p>
                             </div>
@@ -210,7 +217,7 @@
                         </div>
                         <div>
                             <div class="feature-info">
-                                <h1 class="feature-title">Custom Module</h1>
+                                <h2 class="feature-title">Custom Module</h2>
                                 <p class="feature-text">You can create Members, Groups Module. We already created 3
                                     modules. It's by drag & drop live builder.
                                 </p>
@@ -228,7 +235,7 @@
                         </div>
                         <div>
                             <div class="feature-info">
-                                <h1 class="feature-title">List Builder</h1>
+                                <h2 class="feature-title">List Builder</h2>
                                 <p class="feature-text">Members, Groups list can be modified by drag & drop live
                                     builder.
                                 </p>
@@ -241,7 +248,7 @@
                         </div>
                         <div>
                             <div class="feature-info">
-                                <h1 class="feature-title">List Scroll Effects</h1>
+                                <h2 class="feature-title">List Scroll Effects</h2>
                                 <p class="feature-text">8 different scroll effects are ready. You can always change by
                                     your tastes.
                                 </p>
@@ -252,12 +259,13 @@
             </div>
         </section>
 
-        <section class="section-team">
-            <div class="team">
+        <section class="section">
+            <div class="section-content-wrapper">
                 <div class="team-info">
-                    <strong class="team-secondary-title">Valuable Team</strong>
-                    <h1 class="team-title">Our Active Members</h1>
-                    <p class="team-text">when an unknown printer took a galley of type and meeting fari <br> scrambled
+                    <h3 class="section-secondary-title">Valuable Team</h3>
+                    <h2 class="section-title">Our Active Members</h2>
+                    <p class="section-text">when an unknown printer took a galley of type and meeting fari <br>
+                        scrambled
                         it.
                     </p>
                 </div>
@@ -317,12 +325,12 @@
             </div>
         </section>
 
-        <section class="section-application">
-            <div class="application grid grid--2-cols">
+        <section class="section section-application">
+            <div class="section-content-wrapper grid grid--2-cols">
                 <div class="application-left">
-                    <strong class="app-section-secondary-title">Get Our Aplication</strong>
-                    <h1 class="app-section-title">You Can Easily Find This App…!</h1>
-                    <p class="app-section-text">I say chap that’s suing lavatory chip shop gosh off his smashing boot
+                    <h3 class="section-secondary-title">Get Our Aplication</h3>
+                    <h2 class="section-title">You Can Easily Find This App…!</h2>
+                    <p class="section-text">I say chap that’s suing lavatory chip shop gosh off his smashing boot
                         are you taking the piss posh loo brilliant.</p>
                     <div class="app-btns-container">
                         <a href="#"><img class="ios-btn" src="./assets/application/IOS@2x.png" alt="ios"></a>
@@ -336,11 +344,11 @@
             </div>
         </section>
 
-        <section class="section-news">
-            <div class="news">
+        <section class="section" id="news">
+            <div class="section-content-wrapper">
                 <div class="news-header">
-                    <strong class="news-section-secondary-title">Our Latest News</strong>
-                    <h1 class="news-section-title">Latest News</h1>
+                    <h3 class="section-secondary-title">Our Latest News</h3>
+                    <h2 class="section-title">Latest News</h2>
                 </div>
                 <div class="news-cards">
                     <figure class="news-card">
@@ -356,7 +364,7 @@
                                 </h2>
                             </div>
                             <a class="news-card-link" href="#">
-                                <p class="link-grey">Continue Reading</p>
+                                <span class="link-grey">Continue Reading</span>
                                 <img src="./assets/achievements/ArrowRight-black.svg" alt="Right black arrow">
                             </a>
                         </div>
@@ -375,7 +383,7 @@
                                 </h2>
                             </div>
                             <a class="news-card-link" href="#">
-                                <p class="link-blue">Continue Reading</p>
+                                <span class="link-blue">Continue Reading</span>
                                 <img src="./assets/achievements/ArrowRight-blue.svg" alt="Right blue arrow">
                             </a>
                         </div>
@@ -393,7 +401,7 @@
                                 </h2>
                             </div>
                             <a class="news-card-link" href="#">
-                                <p class="link-grey">Continue Reading</p>
+                                <span class="link-grey">Continue Reading</span>
                                 <img src="./assets/achievements/ArrowRight-black.svg" alt="Right black arrow">
                             </a>
                         </div>
@@ -404,28 +412,28 @@
 
         <footer class="section-footer">
             <div class="footer">
-                <div class="menu">
+                <div class="footer-menu">
                     <div class="links-container">
                         <div class="links">
-                            <a class="main-link" href="#">Home</a>
+                            <p class="main-link">Home</p>
                             <ul class="links-list">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Community</a></li>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#community">Community</a></li>
                                 <li><a href="#">Events</a></li>
                                 <li><a href="#">Contact</a></li>
                             </ul>
                         </div>
                         <div class="links">
-                            <a class="main-link" href="#">Resources</a>
+                            <p class="main-link">Resources</p>
                             <ul class="links-list">
                                 <li><a href="#">Blog</a></li>
-                                <li><a href="#">News</a></li>
+                                <li><a href="#news">News</a></li>
                                 <li><a href="#">Guides</a></li>
                                 <li><a href="#">Help Center</a></li>
                             </ul>
                         </div>
                         <div class="links">
-                            <a class="main-link" href="#">Community</a>
+                            <p class="main-link">Community</p>
                             <ul class="links-list">
                                 <li><a href="#">NewsFeed</a></li>
                                 <li><a href="#">Profile</a></li>
@@ -434,7 +442,7 @@
                             </ul>
                         </div>
                         <div class="links">
-                            <a class="main-link" href="#">Main links</a>
+                            <p class="main-link">Main links</p>
                             <ul class="links-list">
                                 <li><a href="#">Members</a></li>
                                 <li><a href="#">Activity</a></li>
