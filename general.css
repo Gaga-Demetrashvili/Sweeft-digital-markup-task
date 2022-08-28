@@ -42,6 +42,7 @@
  * - Shades
  * #217BF4
  * #0A093D
+ * #171648
  * #2f2c4a
  * #2B2B39
  * #20202D
@@ -70,6 +71,7 @@
  * --- 06 BORDER-RADIUS
  * 
  * Default: 10px
+ * Medium: 20px
  *
  * @format
  */
@@ -126,13 +128,14 @@ body {
 }
 
 .section-secondary-title {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-weight: 500;
   color: #217bf4;
 }
 
 .section-title {
-  font-size: 3.2rem;
-  margin: 1.2rem 0 1.4rem;
+  font-size: 3.6rem;
+  margin: 0 0 1.4rem;
   letter-spacing: -1px;
   color: #0a093d;
 }

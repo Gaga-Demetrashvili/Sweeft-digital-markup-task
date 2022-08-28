@@ -22,7 +22,7 @@
   position: absolute;
   border: 0.5px solid rgb(255, 255, 255, 0.8);
   right: 0;
-  top: 0.5px;
+  top: 0.4px;
 }
 
 .button-full--footer:hover {
@@ -40,7 +40,7 @@
 /****************************/
 
 .navbar {
-  box-shadow: 0 2px 2px -2px #777;
+  box-shadow: 0 2px 2px -2px rgb(33, 123, 244, 0.5);
 }
 
 .navbar-container {
@@ -48,7 +48,7 @@
   justify-content: space-between;
   max-width: 130rem;
   margin: 0 auto;
-  padding: 0.8rem 3.2rem;
+  padding: 1.6rem 3.2rem;
 }
 
 .logo {
@@ -94,7 +94,7 @@
   display: flex;
   gap: 0.6rem;
   padding-bottom: 1.6rem;
-  border-bottom: solid 1px #888;
+  border-bottom: solid 1px rgb(153, 153, 153, 0.6);
   width: 12.8rem;
   margin-right: 1.2rem;
 }
@@ -107,7 +107,14 @@
   outline: none;
   border: none;
   width: 100%;
+  padding: 1rem 0;
   background-color: transparent;
+  color: #999;
+  font-weight: 500;
+}
+
+.search-icon {
+  margin-top: 1rem;
 }
 
 /****************************/
@@ -168,7 +175,7 @@
 }
 
 .about-left {
-  max-width: 50rem;
+  max-width: 40rem;
 }
 
 .about-list {
@@ -179,7 +186,7 @@
 }
 
 .about-list li {
-  margin-bottom: 1.4rem;
+  margin-bottom: 0.5rem;
 }
 
 .about-list li:last-child {
@@ -187,7 +194,8 @@
 }
 
 .about-list span {
-  color: #000;
+  color: #171648;
+  font-weight: 500;
 }
 
 .about--img-container {
@@ -198,9 +206,26 @@
   width: 80%;
 }
 
+.play-icon {
+  width: 4rem;
+  position: absolute;
+  right: 40%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+}
+
+.about--img-container-left {
+  position: relative;
+}
+
 .about--img-left,
 .about--img-right {
   align-self: center;
+}
+
+.about--img-left {
+  filter: brightness(50%);
+  opacity: 0.9;
 }
 
 .about--img-container-left {
@@ -209,7 +234,7 @@
 
 .about--img-container-right {
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.8rem;
 }
 
 /****************************/
@@ -504,6 +529,7 @@
 /****************************/
 
 .section-application {
+  padding-top: 2rem;
   background-color: #e5f0fd;
 }
 
@@ -534,10 +560,10 @@
 }
 
 .application-img {
-  width: 60rem;
+  width: 70rem;
   position: absolute;
   bottom: 0;
-  left: 12rem;
+  left: 2rem;
 }
 
 /****************************/
@@ -562,10 +588,10 @@
 }
 
 .news-card-img-container {
-  width: 30rem;
-  height: 30rem;
+  width: 35rem;
+  height: 35rem;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .news-card-img {
@@ -599,13 +625,14 @@
 
 .news-text h2 {
   color: #0a093d;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-weight: 500;
   line-height: 2.5rem;
 }
 
 .news-card-link {
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   flex-basis: 0;
 }
 
